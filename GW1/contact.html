@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | FitZone Gym</title>
+  <link rel="stylesheet" href="./gym.html">
+  <link rel="stylesheet" href="./about.html">
+  <link rel="stylesheet" href="./services.html">
+  <link rel="stylesheet" href="./products.html">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-image: url(./images/home.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    nav h1 {
+      font-size: 50px;
+    }
+
+    nav span {
+      color: rgb(241, 13, 13);
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+      margin-top: 20px;
+    }
+
+    ul li a {
+      margin-inline: 30px;
+      font-size: 25px;
+      color: white;
+      text-decoration: none;
+    }
+
+    ul li a:hover {
+      border-bottom: 4px solid rgb(14, 14, 241);
+      border-radius: 3px;
+      font-size: 27px;
+      cursor: pointer;
+    }
+
+    ul button {
+      width: 100px;
+      height: 34px;
+      background-color: rgb(244, 11, 11);
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 3px;
+      margin-left: 20px;
+    }
+
+    ul button:hover {
+      border: 3px solid white;
+      background-color: rgb(242, 54, 54);
+      cursor: pointer;
+    }
+
+    .contact-container {
+      margin: 100px 5%;
+    }
+
+    .contact-container h1 {
+      font-size: 60px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .form-wrapper {
+      max-width: 600px;
+      background-color: rgba(0, 0, 0, 0.6);
+      margin: auto;
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    .form-wrapper label {
+      font-size: 18px;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .form-wrapper input,
+    .form-wrapper textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .form-wrapper input[type="submit"] {
+      background-color: rgb(231, 13, 13);
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .form-wrapper input[type="submit"]:hover {
+      background-color: rgb(242, 54, 54);
+      border: 2px solid white;
+    }
+
+    .contact-info {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 18px;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1><span>FitZone Gym</span></h1>
+    <ul>
+      <li><a href="gym.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <button>Join Us</button>
+    </ul>
+  </nav>
+
+  <div class="contact-container">
+    <h1>Contact Us</h1>
+    <div class="form-wrapper">
+      <form action="#" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+
+        <input type="submit" value="Send Message" />
+      </form>
+    </div>
+
+    <div class="contact-info">
+      <p><strong>Phone:</strong> +123-456-7890</p>
+      <p><strong>Email:</strong> info@fitzonegym.com</p>
+      <p><strong>Address:</strong> 123 Fitness Street, New York city, TOQs 789</p>
+    </div>
+  </div>
+
+  <footer style="background-color: #111; padding: 40px 0; text-align: center; color: white; margin-top: 100px;">
+    <div style="max-width: 1200px; margin: auto;">
+        <h2 style="color: rgb(241, 13, 13); font-size: 30px;">FitZone Gym</h2>
+        <p style="margin: 10px 0;">Your ultimate destination for fitness and health.</p>
+        <div style="margin: 20px 0;">
+            <a href="home.html" style="margin: 0 15px; color: white; text-decoration: none;">Home</a>
+            <a href="about.html" style="margin: 0 15px; color: white; text-decoration: none;">About</a>
+            <a href="services.html" style="margin: 0 15px; color: white; text-decoration: none;">Services</a>
+            <a href="products.html" style="margin: 0 15px; color: white; text-decoration: none;">Products</a>
+            <a href="contact.html" style="margin: 0 15px; color: white; text-decoration: none;">Contact</a>
+        </div>
+        <p style="margin-top: 20px; font-size: 14px; color: gray;">&copy; 2025 FitZone Gym. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
